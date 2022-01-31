@@ -7,9 +7,7 @@ public class JasmineCat {
     String name;
     int age;
     int weight;
-    int chest;
-    int pawLehgth;
-    int x;
+
 
     public void nameCat() {
         System.out.println(name);
@@ -36,8 +34,8 @@ public class JasmineCat {
     }
 
     public void massIndex(){
-        x = (int) ((chest / 0.7062 - pawLehgth) / 0.9156 - pawLehgth);
-        if (x > 10) {
+        var x = ((age - weight) * (age + weight));
+        if (x >= 50) {
             System.out.println("Твоей кошке необходимо немного похудеть!");}
         else {
             System.out.println("Твоя кошка идеальна!");

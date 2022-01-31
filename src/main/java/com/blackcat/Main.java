@@ -7,8 +7,9 @@ public class Main {
         jasmineCat.colour = "Черный";
         jasmineCat.breed = "Шотландский скоттиш-фолд";
         jasmineCat.feed = "Carmy";
-        jasmineCat.age = 8;
+        jasmineCat.age = 15;
         jasmineCat.weight = 4;
+
 
         jasmineCat.nameCat();
         jasmineCat.colourCat();
