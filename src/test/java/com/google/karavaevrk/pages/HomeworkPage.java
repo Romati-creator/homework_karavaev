@@ -1,4 +1,4 @@
-package pages;
+package com.google.karavaevrk.pages;
 
 import com.codeborne.selenide.Configuration;
 import com.github.javafaker.Faker;
@@ -8,7 +8,6 @@ import org.junit.jupiter.api.Test;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.sleep;
 
 public class HomeworkPage {
 
