@@ -1,4 +1,4 @@
-package com.google.karavaevrk.pages.components;
+package com.google.karavaevrk.homework.pages.components.pages.components.pages.components;
 
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;

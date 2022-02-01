@@ -1,4 +1,4 @@
-package com.google.karavaevrk.pages;
+package com.google.karavaevrk.homework.pages.components.pages.components.pages;
 
 import com.codeborne.selenide.Configuration;
 import com.github.javafaker.Faker;
