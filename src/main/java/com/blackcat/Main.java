@@ -6,18 +6,31 @@ public class Main {
         jasmineCat.name = "Жасмин";
         jasmineCat.colour = "Черный";
         jasmineCat.breed = "Шотландский скоттиш-фолд";
-        jasmineCat.feed = "Carmy";
+        jasmineCat.food = "Carmy";
         jasmineCat.age = 15;
         jasmineCat.weight = 4;
 
+        jasmineCat.printName();
+        jasmineCat.printColour();
+        jasmineCat.printBreed();
+        jasmineCat.printFood();
+        jasmineCat.printAge();
+        jasmineCat.printWeight();
+        jasmineCat.printMassIndex();
 
-        jasmineCat.nameCat();
-        jasmineCat.colourCat();
-        jasmineCat.breedCat();
-        jasmineCat.feedCat();
-        jasmineCat.ageCat();
-        jasmineCat.weightCat();
-        jasmineCat.massIndex();
+        HappyDog happyDog = new HappyDog();
+        happyDog.name = "Зевс";
+        happyDog.colour = "Палевый";
+        happyDog.breed = "Лабрадор";
+        happyDog.chasingCats = 30;
+        happyDog.catsInTheArea = 60;
 
+        happyDog.printName();
+        happyDog.printColour();
+        happyDog.printBreed();
+        happyDog.printCatsInTheArea();
+        happyDog.printChasingCats();
+        happyDog.printHappyCats();
+        happyDog.percentageOfRespect();
     }
 }

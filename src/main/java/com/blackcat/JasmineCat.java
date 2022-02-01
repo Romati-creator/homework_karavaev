@@ -3,42 +3,42 @@ package com.blackcat;
 public class JasmineCat {
     String colour;
     String breed;
-    String feed;
+    String food;
     String name;
     int age;
     int weight;
 
 
-    public void nameCat() {
+    public void printName() {
         System.out.println(name);
     }
 
-    public void colourCat() {
+    public void printColour() {
         System.out.println(colour);
     }
 
-    public void breedCat(){
+    public void printBreed(){
         System.out.println(breed);
     }
 
-    public void feedCat(){
-        System.out.println(feed);
+    public void printFood(){
+        System.out.println(food);
     }
 
-    public void ageCat(){
+    public void printAge(){
         System.out.println(age);
     }
 
-    public void weightCat(){
+    public void printWeight(){
         System.out.println(weight);
     }
 
-    public void massIndex(){
-        var x = ((age - weight) * (age + weight));
+    public void printMassIndex(){
+        int x = ((age - weight) * (age + weight));
         if (x >= 50) {
-            System.out.println("Твоей кошке необходимо немного похудеть!");}
+            System.out.println("Твоей кошке необходимо немного похудеть!\n");}
         else {
-            System.out.println("Твоя кошка идеальна!");
+            System.out.println("Твоя кошка идеальна!\n");
         }
     }
 }
