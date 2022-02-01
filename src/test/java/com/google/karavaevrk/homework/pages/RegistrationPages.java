@@ -1,8 +1,8 @@
-package com.google.karavaevrk.homework.pages.components.pages.components.pages;
+package com.google.karavaevrk.homework.pages;
 
 import com.codeborne.selenide.SelenideElement;
-import com.google.karavaevrk.homework.pages.components.pages.components.pages.components.CalendarComponents;
-import com.google.karavaevrk.homework.pages.components.pages.components.pages.components.StateAndCityComponents;
+import com.google.karavaevrk.homework.pages.components.CalendarComponents;
+import com.google.karavaevrk.homework.pages.components.StateAndCityComponents;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
