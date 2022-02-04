@@ -21,49 +21,80 @@ public class RegistrationPages {
                     userNumberInput = $("#userNumber"),
                     userAdressInput = $("#currentAddress");
 
-    public void openPage(){
+    public RegistrationPages openPage(){
         // Открываем страницу в браузере
         open("https://demoqa.com/automation-practice-form");
         // Проверка правильного заголовка
         $(".practice-form-wrapper").shouldHave(text("Student Registration Form"));
+
+        return this;
     }
 
-    public void typeFirstName(String value) {
+    public RegistrationPages typeFirstName(String value) {
         firstNameInput.setValue(value);
+
+        return this;
     }
-    public void typeLastName(String value) {
+    public RegistrationPages typeLastName(String value) {
         lastNameInput.setValue(value);
+
+        return this;
     }
 
-    public void typeUserEmail(String value) {
+    public RegistrationPages typeUserEmail(String value) {
         userEmailInput.setValue(value);
+
+        return this;
     }
 
-    public void clickButton() {
+    public RegistrationPages clickButton() {
         radioButton.click();
+
+        return this;
     }
 
-    public void typeUserNumber(String value) {
+    public RegistrationPages typeUserNumber(String value) {
         userNumberInput.setValue(value);
+
+        return this;
     }
 
-    public void choiceSubjectsField() {
+    public RegistrationPages choiceSubjectsField(String value) {
         // выбор значений в поле Subjects
-        $("#subjectsInput").scrollIntoView(true).setValue("History").pressEnter();
-        $("#subjectsInput").setValue("Arts").pressEnter();
-    }
-    public void choiceElements() {
-        // Выбираем элементы из чек-бокса
-        $("#hobbiesWrapper").$(byText("Reading")).click();
-        $("#hobbiesWrapper").$(byText("Music")).click();
+        $("#subjectsInput").scrollIntoView(true).setValue(value).pressEnter();
+
+        return this;
     }
 
-    public void attachFile() {
+    public RegistrationPages choiceElements(String value) {
+        // Выбираем элементы из чек-бокса
+        $("#hobbiesWrapper").$(byText(value)).click();
+
+        return this;
+    }
+
+    public RegistrationPages attachFile() {
         // Выбираем файл для вложения (создав при этом каталог resources)
         $("#uploadPicture").uploadFromClasspath("KingOfNorth.jpg");
+
+        return this;
     }
 
-    public void typeUserAdress(String value) {
+    public RegistrationPages typeUserAdress(String value) {
         userAdressInput.setValue(value);
+
+        return this;
+    }
+
+    public RegistrationPages checkingTest() {
+        // Проверка теста
+        $(byText("Thanks for submitting the form")).shouldHave(text("Thanks for submitting the form"));
+
+        return this;
+    }
+    public RegistrationPages checkingTestResult(String value) {
+        $(".table-responsive").shouldHave(text(value));
+
+        return this;
     }
 }

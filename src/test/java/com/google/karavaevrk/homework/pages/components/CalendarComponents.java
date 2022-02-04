@@ -16,5 +16,4 @@ public class CalendarComponents {
         String dayLocator = format(".react-datepicker__day--0%s:not(.react-datepicker__day--outside-month)", day);
         $(dayLocator).click();
     }
-
 }
