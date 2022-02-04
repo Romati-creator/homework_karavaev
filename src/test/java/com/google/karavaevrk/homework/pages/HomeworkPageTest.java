@@ -25,7 +25,8 @@ public class HomeworkPageTest {
     @Test
      void fillFormTest() {
 
-        registrationPages.openPage()
+        registrationPages
+                .openPage()
                 .typeFirstName(firstName)
                 .typeLastName(lastName)
                 .typeUserEmail(userEmail)
